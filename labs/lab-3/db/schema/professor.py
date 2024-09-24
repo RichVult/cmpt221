@@ -8,13 +8,16 @@ class Professor(db.Model):
     # create relationship with courses table. assoc table name = ProfessorCourse
     course = db.relationship('Courses', secondary = 'ProfessorCourse', back_populates = 'Professors')
     def __init__(self):
-        # remove pass and then initialize attributes
-        pass
+        self.firstName = self.firstName
+        self.lastName = self.lastName
+        self.email = self.email
 
     def __repr__(self):
         # add text to the f-string
         return f"""
-
+        COURSE NAME: {self.CourseName},
+        SEMESTER: {self.Semester},
+        YEAR: {self.Year}
         """
     
     def __repr__(self):
