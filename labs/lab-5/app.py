@@ -8,6 +8,18 @@ from db.server import app
 def index():
     return render_template("index.html")
 
+@app.route('/login')
+def login():
+    return render_template("logIn.html")
+
+@app.route('/reg')
+def reg():
+    return render_template("register.html")
+
+@app.route('/cat')
+def cat():
+    return render_template("cat.html")
+
 if __name__ == "__main__":
     # debug refreshes your application with your new changes every time you save
     app.run(debug=True)
