@@ -43,3 +43,18 @@ def sample_signup_input():
             'PhoneNumber': '1234567891', 
             'Password': 'mypassword'
             }
+
+@pytest.fixture
+def sample_login_input():
+    return {'Email': 'calista.phippen1@marist.edu', 
+            'Password': 'mypassword'
+            }
+
+@pytest.fixture
+def bad_sample_signup_input():
+    return {'FirstName': '2', 
+            'LastName': '1', 
+            'Email': "3", 
+            'PhoneNumber': 'notNumbers', 
+            'Password': 'mypassword'
+            }
