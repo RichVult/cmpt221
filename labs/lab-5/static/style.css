@@ -1,14 +1,76 @@
 body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: blueviolet;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-    text-align: center;
-  }
+  background-color: green;
+  height: 100vh; 
+  margin: 0;         
+}
+
+.container {
+  text-align: right;  
+}
+
+.centerNot
+{
+  position : absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+  width: 200px;
+  bottom : 100px;
+  left : 500px;
+}
+
+.centerNot1
+{
+  position : absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+  width: 200px;
+  bottom : 500px;
+  left : 800px;
+}
+
+.pics
+{
+  position : absolute;
+  justify-content: center;
+  align-items: center;
+  top : 200px;
+  left : 500px;
+  margin : 50px;
+}
+
+.hiddenLink a {
+  text-decoration: none;
+  color: greenyellow; 
+}
+
+h1 {
+  color: greenyellow;
+  font-size: 60px;
+  text-align: center;
+}
+
+p {
+  color: greenyellow;
+  font-family: verdana;
+  font-size: 20px;
+  text-align: left;
+}
+
+p1 {
+  color: green;
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  font-family: verdana;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;  
+  background-color: greenyellow;
+  border: none;
+  cursor: pointer;
+}
